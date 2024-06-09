@@ -1,66 +1,169 @@
+/* Importação da fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Estilo base para o site */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  header {
-    background-color: #00c43b9d;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-  }
-  
-  header h1 {
-    font-size: 30px;
-    font-weight: 600;
-  }
-  
-  header p {
-    font-size: 18px;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 30px;
-  }
-  
-  section h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 20px;
-  }
-  
-  li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    transition: 0.3s;
-  }
-  
-  li a:hover {
-    color: #00c43b9d;
-  }
-  
-  li img {
-    width: 200px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #00
-  }  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Cabeçalho e navegação */
+header {
+  background-color: #00c43b9d;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+
+header p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Navegação */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav li a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Seção de ideias */
+.ideias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ideias li {
+  margin-bottom: 20px;
+}
+
+.ideias li a {
+  display: block;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ideias li a:hover {
+  background-color: #f2f2f2;
+}
+
+.ideias img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+/* Seção de banner */
+.banner {
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.308)), url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.texto .titulo {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.texto p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.texto .botoes {
+  display: flex;
+  justify-content: center;
+}
+
+.texto .botoes button {
+  height: 45px;
+  width: 150px;
+  border-radius: 5px;
+  border: 0;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.texto .botoes button:hover {
+  background-color: #333;
+}
+
+/* Seção de benefícios */
+.beneficios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.beneficios li {
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+  color: #000;
+}
